@@ -2,7 +2,7 @@ import numpy as np
 
 avg = 20.485
 maalinger = 20
-standard_avvik = 0.106  # Fra oppgave 1b
+standard_avvik = 0.1089  # Fra oppgave 1b
 t_p = 2.093  # Fra tosidig student t-fordeling
 
 konfidensintervall_pos = avg + t_p*(standard_avvik/np.sqrt(maalinger))
