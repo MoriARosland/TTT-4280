@@ -13,7 +13,6 @@ delta_f = F_s / N_fft
 A = 1  # Volts
 F = 100  # Hz
 
-
 time = np.arange(0, numberOfSamples*delta_t, delta_t)
 x_t = A * np.sin(2*np.pi*F*time)
 
