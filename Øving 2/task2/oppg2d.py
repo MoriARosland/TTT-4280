@@ -27,8 +27,7 @@ index_200Hz = int(np.ceil(201 / delta_f))
 
 plt.plot(frequencies[:index_200Hz], S_x_normalized[:index_200Hz])
 plt.xlabel('Frequency [Hz]')
-plt.ylabel('Descibel [db]')
+plt.ylabel('Relative effect [db]')
 plt.ylim(-81, 10)
-plt.title('Relative effect')
 
 plt.show()
