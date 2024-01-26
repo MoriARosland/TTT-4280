@@ -5,13 +5,12 @@ numberOfSamples = 900
 plotRange = 200
 delta_t = 0.2e-3  # Seconds
 
-A = 1  # Volts
 F = 100  # Hz
 
 N_fft = 1024
 
 time = np.arange(0, numberOfSamples*delta_t, delta_t)
-x_t = A * np.sin(2*np.pi*F*time)
+x_t = np.sin(2*np.pi*F*time)
 
 X_f = np.fft.fft(x_t, N_fft)
 frequency = np.fft.fftfreq(N_fft, delta_t)
